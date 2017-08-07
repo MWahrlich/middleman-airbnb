@@ -1,0 +1,19 @@
+
+<div class="container">
+  <% flat = data.flats[owner] %>
+  <div class="wrapper">
+    <div class="picture-wrapper">
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "avatar-large" %>
+    </div>
+    <div class="name-wrapper">
+      <p><%= flat.name %></p>
+    </div>
+    <div class="city-name-wrapper">
+      <p><%= flat.city_name %></p>
+    </div>
+    <div class="description-wrapper">
+      <p>Flat description:</p>
+      <p><%= flat.description %></p>
+    </div>
+  </div>
+</div>
